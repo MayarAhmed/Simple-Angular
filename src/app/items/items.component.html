@@ -1,0 +1,18 @@
+
+<app-header></app-header>
+<!--Items-->
+<div class="container">
+  <div class="row">
+<div class="card-group m-3 p-5 col-md-5" *ngFor = "let item of obj">
+    <img class="card-img-top w-100 h-75" src=" {{item.src}} " alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{item.Title}}</h5>
+      <p class="card-text">{{item.price}}</p>
+      <button class="btn btn-success"  (click)="addCart(item.id)">Add to cart </button>
+
+  </div>
+</div>
+
+
+</div>
+</div>

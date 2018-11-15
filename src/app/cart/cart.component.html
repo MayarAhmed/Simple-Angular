@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div class="container">
+<div class="card mt-5" style="width: 18rem;" *ngFor ="let index of cartItems">
+    <img class="card-img-top w-100" src="{{index.src}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{index.Title}}</h5>
+      <a href="#" class="btn btn-primary">{{index.price}}</a>
+    </div>
+    
+  </div>
+  <div class="text-center mt-5" [hidden]="btn" >
+      <button  class="btn btn-success btn-lg active" (click)="clac()">Check Out</button>
+  </div>
+</div>
